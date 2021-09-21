@@ -1,0 +1,161 @@
+body{
+    font-family: Arial, Helvetica, sans-serif; 
+    
+
+}
+header{
+    width: 100%;
+    background-color: white;
+    
+    
+}
+footer{
+    background-color: white;
+}
+#barraP{
+    padding-bottom: 30px;
+    
+}
+.imgPortal{
+    width: 100px;
+}
+h2{
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: rgb(7, 44, 255);
+}
+h4{
+    color: white;
+    
+}
+ul{
+    display: inline-block;
+   
+}
+p{
+    
+    color: white;
+}
+.inicio-p{
+    text-align: justify;
+    font-size: 20px;
+}
+.a{
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(7, 44, 255);
+    cursor:pointer;
+    text-decoration: none;
+}
+
+li{
+    margin-right: 20px;
+    list-style: none;
+}
+/***************************/
+main{
+    
+ 
+    text-align: center;
+}
+.col-md-3{
+    background-color: #006275;
+    border-style: solid;
+}
+.col{
+    background-color: #006275;
+ 
+}   
+.h1P{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    color: white;
+     
+}
+
+.list-group-item{
+   width: 100%;
+    
+}
+.ul{
+    text-align: left;
+    
+  margin-top: 50px;
+}
+.ulbtn{
+    text-align: left;
+}
+.ulbtnC{
+    text-align: center;
+}
+
+
+/****parte consumo****/
+.consumoESC{
+    display: none;
+}
+.divConsumo{
+    padding: 60px;
+    margin: auto;
+    width: 500px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    
+}
+
+
+.divConsumo > h3 {
+    margin-top: 10px;
+}
+input::placeholder{
+    font-weight: bolder;
+    color: black;
+}
+/***********SALDO*/
+#saldo{
+    display: none;
+}
+/********comprar*****/
+.c{
+   background-color:rgba(131, 131, 131, 0);
+ 
+}
+#compra{
+    display: none;
+    color: white;
+    
+}
+.imputCompra{
+    width: 50px;
+}
+.SpanC{
+    color: rgb(143, 5, 5);
+    font-weight: 900;
+}
+.confirmarCompra{
+
+    margin-bottom: 10px;
+}
+
+
+/******bebidas e comidas******/
+#bebidass{
+    display: none;
+}
+
+/***carrinho***/
+#carrinho{
+    display: none;
+    color: white;
+}
+/* @media screen and (max-width: 574px){
+
+    .col-md-3{
+        
+       
+    }
+} */

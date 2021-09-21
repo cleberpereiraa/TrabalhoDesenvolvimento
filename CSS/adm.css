@@ -1,0 +1,171 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+header{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.692);
+    
+    
+}
+.imgPortal{
+    width: 100px;
+}
+#barraP{
+    border-style: solid;
+    border-color: black ;
+    padding-bottom: 30px;
+    
+}
+.p{
+    text-align: justify;
+    margin-top: 30px;
+    font-size: 20px;
+}
+h2{
+    text-align: center;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: rgb(0, 0, 0);
+}
+ul{
+    display: inline-block;
+   
+}
+
+.a{
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    cursor:pointer;
+    text-decoration: none;
+}
+
+li{
+    margin-right: 20px;
+    list-style: none;
+}
+/***************************/
+main{
+   
+    text-align: center;
+}
+.col-lg-3{
+    background-color: #006275;
+    
+}
+
+.col{
+   
+    background-color: #006275;
+
+}   
+.h1P{
+    margin-top: 30px;
+    
+    color: white;
+  
+}
+
+.list-group-item{
+   width: 100%;
+    
+}
+.ul{
+    text-align: left;
+    
+  margin-top: 50px;
+}
+.ulbtn{
+    text-align: left;
+}
+.ulbtnC{
+    text-align: center;
+}
+
+
+/****cadastroo****/
+#cadastroUsuario{
+    display: none;
+}
+.divConsumo{
+    padding: 60px;
+    margin: auto;
+    width: 100%;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    background-color: rgba(131, 131, 131, 0.651);
+}
+
+.spanC{
+    color:rgba(131, 131, 131, 0.651);
+}
+.divConsumo > h3 {
+    margin-top: 10px;
+}
+input::placeholder{
+    font-weight: bolder;
+    color: black;
+}
+
+
+#CadastroAluno{
+    display: none;
+}
+
+/****TABELA DE CADASTRO DO FILHO*/
+
+  #listaResponsavel{
+      display: none;
+  }
+
+#listaAluno{
+    display: none;
+}
+
+
+/*****cadastro de produtos********/
+
+.imgingredientes{
+    width: 30px;
+}
+
+#AlterarProduto{
+    display: none;
+}
+#cadastroBebidas{
+    display: none;
+}
+
+/***********CADASTRO PRODUTO*/
+#cadastroProdutos{
+    display: none;
+}
+/********SALDO ALUNO***/
+#saldoAluno{
+    display: none;
+    
+}
+.table{
+    color: white;
+}
+form{
+    color: white;
+}
+label{
+    color: white;
+}
+
+/****botoes***/
+.botaoCComida{
+    margin-top: 10px;
+}
+@media screen and (max-width: 574px){
+
+    .col-md-3{
+        
+        height: 900px;
+    }
+}

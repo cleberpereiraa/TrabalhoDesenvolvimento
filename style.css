@@ -1,0 +1,112 @@
+body{
+    position: relative;
+}
+header{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.692);
+    
+    
+}
+ul{
+    display: inline-block;
+   
+}
+a{
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    cursor:pointer;
+    text-decoration: none;
+    
+}
+
+li{
+    margin-right: 20px;
+    list-style: none;
+}
+.Sprincipal{
+    background-image: url("img/869509-adoravel-crianca-comendo-macas-foto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    color: rgb(255, 255, 255);
+   
+}
+.col{
+   font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.primeiro{
+    margin-top: 150px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    /* margin-left: 300px; */
+    font-size: 15px;
+    
+}
+
+h2{
+    text-align: center;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: rgb(0, 0, 0);
+}
+.segunda{
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    transition: 1s;
+   
+}
+.segunda:hover {
+   transition: 1s;
+    background-color: white;
+}
+#Qsomos{
+    margin-top: 80px;
+}
+.DqSomos{
+  margin-top: 70px;
+}
+.h1somos{
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+h3{
+    
+    text-align: justify;
+}
+#contato{
+    margin-top: 150px;
+    
+}
+.contatoh1{
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+.contatoh1{
+    text-align: center;
+
+}
+.divContato{
+    margin-top: 70px;
+}
+
+html {
+    font-size: 1rem;
+  }
+  
+  @media screen and (max-width: 950px){
+      html{font-size: 10px;}
+  }
+
+  .imgfixo{
+      position: fixed;
+      bottom: 0;
+  right: 25px;
+
+  }

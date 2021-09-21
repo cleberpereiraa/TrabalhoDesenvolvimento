@@ -1,0 +1,174 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+header{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.692);
+   
+    
+}
+
+.imgPortal{
+    width: 100px;
+}
+#barraP{
+    padding-bottom: 30px;
+    color: white;
+    border-style: solid;
+    border-color: black;
+    
+}
+.p{
+    margin-top: 40px;
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+}
+h2{
+    text-align: center;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: rgb(0, 0, 0);
+}
+ul{
+    display: inline-block;
+   
+}
+
+.a{
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    cursor:pointer;
+    text-decoration: none;
+}
+
+li{
+    margin-right: 20px;
+    list-style: none;
+}
+/***************************/
+main{
+   
+    text-align: center;
+}
+.col-md-3{
+    background-color:#006275;
+    
+    
+}
+.col-md-4{
+    
+    background-color: #006275;
+}
+.col{ 
+    background-color: #006275;
+
+}   
+.h1P{
+    margin-top: 30px;
+    border-radius: 30px;
+    color: white;
+    
+}
+
+.list-group-item{
+   width: 100%;
+    
+}
+.ul{
+    text-align: left;
+    
+  margin-top: 50px;
+}
+.ulbtn{
+    text-align: left;
+}
+.ulbtnC{
+    text-align: center;
+}
+
+
+/****parte consumo****/
+.consumoESC{
+    display: none;
+}
+.divConsumo{
+    padding: 60px;
+    margin: auto;
+    width: 100%;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    
+}
+
+.spanC{
+    color:rgba(131, 131, 131, 0.651);
+}
+.divConsumo > h3 {
+    margin-top: 10px;
+}
+input::placeholder{
+    font-weight: bolder;
+    color: black;
+}
+/***********SALDO*/
+#saldo{
+    display: none;
+}
+/********comprar*****/
+.c{
+   background-color:rgba(131, 131, 131, 0);
+}
+#Produtos{
+    display: none;
+    color: white;
+    
+}
+.imputCompra{
+    width: 50px;
+}
+.SpanC{
+    color: rgb(143, 5, 5);
+    font-weight: 900;
+}
+.confirmarCompra{
+
+    margin-bottom: 10px;
+}
+
+/******DEPOSITAR********/
+#depositar{
+    display: none;
+}
+
+.formValiSegu{
+    width: 100px;
+    
+}
+th, td{
+    color: white;
+}
+.corForm{
+    background-color: rgba(131, 131, 131, 0.651);
+}
+#validadeCartao{
+    margin-right: 10px;
+    
+}
+#CVV{
+    width: 100px;
+}
+#extrato{
+    display: none;
+}
+@media screen and (max-width: 574px){
+
+    .col-md-3{
+        
+        height: 900px;
+    }
+}

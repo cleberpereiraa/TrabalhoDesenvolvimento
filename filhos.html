@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/aluno.css">
+    <title>PortalAluno</title>
+</head>
+<body  class="container">
+    
+  <header class="navbar navbar-inverse"><!-- position-fixed -->
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <h2 class="navbar-brand" href="#">Web#School</h2>
+      </div>
+        <ul class="d-inline-flex  ">
+          <li class="p-2" ><a class="a" href="login.html"> Sair</a></li> 
+        </ul>
+    </div>
+  </header>
+    
+
+  <main class="row">
+
+    <div id="barraP" class=" col-xs-3 col-sm-3 col-md-3 col-lg-2 ">
+      <img class="imgPortal img-fluid rounded d-block mx-auto" src="img/icone perfil.png" alt="perfil">
+      <h4>AlunoTeste</h4>
+      <p>Matricula:00000</p>
+      <ul class="navbar-nav"  >
+        <li  class="btn bg-dark text-white list-group-item" onclick=" inicio()" >Inicio</li>
+          <ul id="ul" class=" Lnone list-group">
+            <li onclick="consultar()"   class="bg-primary text-white dropdown-item btn ulbtn list-group-item">Consumo</li>
+            <li onclick="saldo()"  class="bg-primary text-white dropdown-item btn ulbtn list-group-item">Saldo</li>
+          </ul>
+        <li onclick="compra()" class="bg-primary text-white btn ulbtn  list-group-item">Produtos</li>
+        <li onclick="carrinho()" class="bg-primary text-white btn ulbtn  list-group-item">Carrinho <img src="img/carrinho.png" alt="carrinho"> </li>
+      </ul> 
+    </div>
+    <div  id="pPrincipal" class="col">
+      <div class="h1P"><h1 >Bem Vindo ao Portal do Aluno</h1></div>
+      <div class="inicio-p">
+      <p>O Web#School dá as boas-vindas aos alunos. Desejamos um excelente retorno às atividades.</p>
+
+       <p>Nós  da Equipe Web#School trabalhamos para oferecer maior praticidade na hora das refeições, visando garantir a segurança alimentar e nutricional de todos.</p> </div>
+    </div>
+     <!---------------consumo---------->
+    <div id="consumo" class="consumoESC col">
+      <h1 class="h1P">CONSUMO</h1>
+      <div class="divConsumo" >
+        <form id="formConsumo" action="">
+          <label for="data">Data Inicial:</label>
+            <input type="date" name="data" value=""><br>
+          <label id="dataF" for="data">Data Final :  <span  class="spanC">.</span> </label>
+            <input type="date" name="data" value="">
+        </form>
+      <h3>Consumo Total:</h3>
+      <h1>R$193.50</h1>
+      </div>
+    </div>
+    <div id="saldo" class="saldoESC col">
+      <h1 class="h1P">SALDO</h1>
+        <div class="divConsumo" >
+          <h3>Total:</h3>
+          <h1>R$500.00</h1>
+        </div>
+    </div>
+    
+    <!---------------comprar---------->
+    <div id="compra" class="col ">
+      <ul class="nav nav-tabs">
+        <li class=" btn-primary btn" onclick="comidasss()">COMIDAS </li>
+        <li class=" btn-primary btn" onclick="Bebidasss()"> BEBIDAS</li>
+    </ul> 
+    <div id="comidass">
+      <h1 class="h1P">Comidas</h1>   
+      
+        <div class=" row">
+          
+          <div class="c col">
+            <img class="imgC img-fluid" src="img/banana.png" alt="banana">
+            <p>Banana:R$ <span class="SpanC">2.99</span> <br>ADC:
+              <input type="number" class="imputCompra" id="input1" min="0" value="0"></p>
+          </div>
+          <div class="c col">
+            <img class="imgC img-fluid"  src="img/maça.png" alt="maca">
+            <p>Maça:R$<span class="SpanC">2.49</span> <br>ADC:
+              <input type="number" class="imputCompra" id="input2" min="0" value="0"></p>
+          </div >
+          <div class="c col">
+            <img class="imgC img-fluid"  src="img/uva2.png" alt="uva">
+            <p>Uva:R$ <span class="SpanC">3.49</span> <br>ADC:
+              <input type="number" class="imputCompra" id="input3" min="0" value="0"></p>
+          </div >
+        </div>
+         <!---------------*****---------->
+        <div class="row" >
+          
+          <div class="c col">
+            <img class="imgC img-fluid"    src="img/bolinho.png" alt="bolinho">
+            <p>Bolinho:R$<span class="SpanC">5.50</span>  <br>ADC:
+            <input type="number" class="imputCompra" id="input4" min="0" value="0"></p>
+          </div>
+          <div class="c col">
+            <img class="imgC img-fluid"  src="img/hamburguer.png" alt="hamburguer">
+            <p class="pCompra">Sanduiche:R$<span class="SpanC">7.50</span> <br>ADC:
+              <input type="number" class="imputCompra" id="input5" min="0" value="0"></p>
+          </div >
+          <div class="c col">
+            <img class="imgC img-fluid" src="img/pizza.png" alt="sucoUva">
+            <p>Pizza:R$<span class="SpanC">8.49</span> <br>ADC:
+            <input type="number" class="imputCompra"  id="input6" min="0" value="0"></p>
+          </div >
+        </div>
+        
+        <p ><input onclick="totalComidas()" type="button" value="Total:">
+       <span id="resultado">R$0.00</span> </p>
+       <input onclick="valorTotal()" type="button" class="confirmarCompra" value="Mandar pro carrinho">
+      
+       
+    </div>
+      <!---------------**Bebidas***---------->
+    <div id="bebidass">
+      <h1 class="h1P">Bebidas</h1>   
+      
+        <div class=" row">
+          
+          <div class="c col">
+            <img class="imgC img-fluid" src="img/agua.png" alt="agua">
+            <p>Agua:R$ <span class="SpanC">1.99</span> <br>ADC:
+              <input type="number" class="imputCompra" id="input11" min="0" value="0"></p>
+          </div>
+          <div class="c col">
+            <img class="imgC img-fluid"  src="img/aguaCoco.png" alt="cocô">
+            <p>Agua de Cocô:R$<span class="SpanC">3.49</span> <br>ADC:
+              <input type="number" class="imputCompra" id="input22" min="0" value="0"></p>
+          </div >
+          <div class="c col">
+            <img class="imgC img-fluid"  src="img/chaGelado.png" alt="cha">
+            <p>Cha Gelado:R$ <span class="SpanC">4.20</span> <br>ADC:
+              <input type="number" class="imputCompra" id="input33" min="0" value="0"></p>
+          </div >
+        </div>
+         <!---------------*****---------->
+        <div class="row" >
+          
+          <div class="c col">
+            <img class="imgC img-fluid"    src="img/guarana.png" alt="guaraná">
+            <p>Guaraná:R$<span class="SpanC">8.50</span>  <br>ADC:
+            <input type="number" class="imputCompra" id="input44" min="0" value="0"></p>
+          </div>
+          <div class="c col">
+            <img class="imgC img-fluid"  src="img/suco morango.png" alt="sucoMorango">
+            <p class="pCompra">Suco Morango:R$<span class="SpanC">6.00</span> <br>ADC:
+              <input type="number" class="imputCompra" id="input55" min="0" value="0"></p>
+          </div >
+          <div class="c col">
+            <img class="imgC img-fluid" src="img/sucoUva.png" alt="sucoUva">
+            <p>Suco Uva:R$<span class="SpanC">7.20</span> <br>ADC:
+            <input type="number" class="imputCompra"  id="input66" min="0" value="0"></p>
+          </div >
+        </div>
+        
+        <p ><input onclick="totalBebidas()" type="button" value="Total:">
+       <span id="resultadoBebidas">R$0.00</span> </p>
+       
+     
+       <input onclick="valorTotal()" type="button" class="confirmarCompra" value="Mandar pro carrinho">
+    </div>
+        </div>
+        <div id="carrinho" class="saldoESC col">
+          <h1 class="h1P">TOTAL</h1>
+            <div class="carrinhoT" >
+              <h3><img src="img/carrinho.png" alt=""> Total:</h3>
+              <h1 id="resultadoVT">R$500.00</h1>
+              <input  type="button" class="confirmarCompra" value="Confirmar Compra">
+            </div>
+        </div>
+
+  </main>
+  
+  <footer class="page-footer font-small blue">
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+      <a href="#"> SoftwareNews</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer><footer></footer>
+
+
+      <!-- ********************************************-->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="JAVASCRIPT/aluno.js"></script>
+</body>
+</html>
