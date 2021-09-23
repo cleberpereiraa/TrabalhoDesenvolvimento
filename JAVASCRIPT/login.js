@@ -9,13 +9,13 @@ function clicouPF(){
                 {senha1: "123456"}];
 
     if(email.value == logins[0].email1 && senha.value == logins[1].senha1 ){
-      alert("tudo certo")
+      alert("login efetuado com sucesso!")
       window.location.href = "file:///C:/Users/CLEBER/Desktop/cleber/unifacs/3%20semenstre/Desenvolvimento%20de%20software%20web/trabalho2/filhos.html";
     }else if(email.value == logins[0].email2 && senha.value == logins[1].senha1){
-      alert("tudo certo")
+      alert("login efetuado com sucesso!")
       window.location.href = "file:///C:/Users/CLEBER/Desktop/cleber/unifacs/3%20semenstre/Desenvolvimento%20de%20software%20web/trabalho2/pais.html";
     }else{
-      alert("erro")
+      alert("Erro 'Login incorreto ou Senha incorreta'.")
     }
 }
 
@@ -31,10 +31,10 @@ function clicouPF(){
   
 
     if(email.value == logins.email3 && senha.value == logins.senha1){
-      alert("tudo certo")
+      alert("login efetuado com sucesso!")
       window.location.href = "file:///C:/Users/CLEBER/Desktop/cleber/unifacs/3%20semenstre/Desenvolvimento%20de%20software%20web/trabalho2/adm.html";
     }else{
-    alert("erro")
+    alert("Erro 'Login incorreto ou Senha incorreta'.")
   }
 
 } 

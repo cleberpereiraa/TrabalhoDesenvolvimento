@@ -1,14 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Oswald', sans-serif;
     color: white;
+    background-color: #fce6d8;
+    font-weight: 800;
 }
 header{
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.692);
-   
+    background-color: rgba(255, 255, 255, 0.925);
+   margin-bottom: 30px;
     
 }
-
+footer{
+    
+    background-color: rgba(255, 255, 255, 0.925);
+}
 .imgPortal{
     width: 100px;
 }
@@ -16,7 +22,7 @@ header{
     padding-bottom: 30px;
     color: white;
     border-style: solid;
-    border-color: black;
+    border-color: #4699b3;
     
 }
 .p{
@@ -52,20 +58,20 @@ li{
 }
 /***************************/
 main{
-   
+    margin-bottom: 30px;
     text-align: center;
 }
 .col-md-3{
-    background-color:#006275;
+    background-color:#5dc4e4;
     
     
 }
 .col-md-4{
     
-    background-color: #006275;
+    background-color: #5dc4e4;
 }
 .col{ 
-    background-color: #006275;
+    background-color: #5dc4e4;
 
 }   
 .h1P{

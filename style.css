@@ -3,9 +3,12 @@ body{
 }
 header{
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.692);
+    background-color: rgba(236, 236, 236, 0.37);
     
     
+}
+footer{
+    background-color: rgba(236, 236, 236, 0.37);
 }
 ul{
     display: inline-block;
@@ -38,7 +41,7 @@ li{
     text-align: center;
 }
 .primeiro{
-    margin-top: 150px;
+    margin-top: 230px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(0, 0, 0);
     /* margin-left: 300px; */
@@ -51,21 +54,29 @@ h2{
     padding: 10px;
     color: rgb(255, 255, 255);
     font-size: 20px;
-    -webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    
+   
 }
 .segunda{
+    border-color: rgba(255, 255, 255, 0.397);
     border-style: solid;
-    border-color: rgb(255, 255, 255);
+   background-color: rgba(255, 255, 255, 0.479);
     transition: 1s;
+
+    margin-top: 30px;
    
 }
 .segunda:hover {
    transition: 1s;
     background-color: white;
+    border-color: rgb(255, 255, 255);
 }
 #Qsomos{
-    margin-top: 80px;
+   
+   margin-top: 80px;
+
 }
 .DqSomos{
   margin-top: 70px;
@@ -80,7 +91,7 @@ h3{
     text-align: justify;
 }
 #contato{
-    margin-top: 150px;
+    margin-top: 220px;
     
 }
 .contatoh1{

@@ -1,0 +1,9 @@
+Pagina aluno
+
+
+modificar:
+--> comprar > Produtos
+> produtos 2 botoes com bebidas e comidas
+> dividir comidads de bebidas
+
+novo botao com carrinho para o valor total dos produtos
