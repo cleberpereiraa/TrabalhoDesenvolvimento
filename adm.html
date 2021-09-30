@@ -1,455 +1,405 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="CSS/adm.css">
-    <title>PortalADM</title>
-</head>
-<body >
-   
-    <header class="navbar navbar-inverse"><!-- position-fixed -->
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <h2 class="navbar-brand" href="#">WebSchool</h2>
-          </div>
-            <ul class="d-inline-flex  ">
-              <li class="p-2" ><a class="a" href="login.html"> Sair</a></li> 
-            </ul>
-        </div>
-      </header>
-        
-    <div class="container">
-      <main class="row">
-    
-        <div id="barraP" class=" col-xs-3 col-sm-5 col-md-6 col-lg-3 ">
-          <img class="imgPortal img-fluid rounded d-block mx-auto" src="img/cantina.png" alt="perfil">
-          <h4>Cantina</h4>
-          
-          <ul class="navbar-nav"  >
-            <li  class="btn bg-dark text-white list-group-item" onclick=" inicio()" >Inicio</li>
-              <ul id="ul" class=" Lnone list-group">
-                <li onclick="cadastroUsuario()"   class="bg-primary text-white dropdown-item btn ulbtn list-group-item">Cadastro de Usuario</li>
-                <li onclick="cadastroProduto()"  class="bg-primary text-white dropdown-item btn ulbtn list-group-item">Cadastro de Produto</li>
-              </ul>
-            
-            <li onclick="AlterarProduto()" class="bg-primary text-white btn ulbtn  list-group-item">Alterar Produto</li>
-            <li onclick="SaldoAluno()" class="bg-primary text-white btn ulbtn  list-group-item">Saldo Alunos</li>
-            
-          </ul> 
-         
-        </div>
-        <div  id="pPrincipal" class="col">
-          <div class="h1P"><h1 > Portal Cantina</h1></div>
-         
-          <p class="p">O WebSchool dá as boas-vindas .</p>
 
-           <p  class="p"> Nós  da Equipe WebSchool trabalhamos para oferecer maior praticidade na hora das refeições, visando garantir a segurança alimentar e nutricional de todos. </p>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="CSS/adm.css">
+  <title>PortalADM</title>
+</head>
+
+<body>
+
+  <header class="navbar navbar-inverse">
+    <!-- position-fixed -->
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <h2 class="navbar-brand" href="#">WebSchool</h2>
+      </div>
+      <ul class="d-inline-flex  ">
+        <li class="p-2"><a class="a" href="login.html"> Sair</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="container">
+    <main class="row">
+
+      <div id="barraP" class=" col-xs-3 col-sm-5 col-md-6 col-lg-3 ">
+        <img class="imgPortal img-fluid rounded d-block mx-auto" src="img/cantina.png" alt="perfil">
+        <h4>Cantina</h4>
+
+        <ul class="navbar-nav">
+          <li id="inic" class="btn  text-white list-group-item" onclick="inicio()">Inicio</li>
+          <ul id="ul" class=" Lnone list-group">
+            <li id="cdu" onclick="cadastroUsuario()" class=" text-white dropdown-item btn ulbtn list-group-item">
+              Cadastro de Usuario</li>
+            <li id="cdp" onclick="cadastroProduto()" class=" text-white dropdown-item btn ulbtn list-group-item">
+              Cadastro de Produto</li>
+          </ul>
+
+          <li id="ap" onclick="AlterarProduto()" class=" text-white btn ulbtn  list-group-item">Alterar Produto</li>
+          <li id="sa" onclick="SaldoAluno()" class=" text-white btn ulbtn  list-group-item">Saldo Alunos</li>
+
+        </ul>
+
+      </div>
+      <div id="pPrincipal" class="col">
+        <div class="h1P">
+          <h1> Portal Cantina</h1>
         </div>
-         <!---------------CADASTRO USUARIO---------->
-        <div id="cadastroUsuario" class="consumoESC col">
-            <ul class="nav nav-tabs">
-                <li class=" btn-primary btn" onclick="casdastroR()">Responsavel </li>
-                <li class=" btn-primary btn" onclick="casdastroA()"> Aluno </li>
-                <li class=" btn-primary btn" onclick="Lresponsavel()"> Lista de Responsavel Cadastrados </li>
-                <li class=" btn-primary btn" onclick="Laluno()">Lista de Alunos Cadastrados</li>
-              </ul>
-         
-         
-          <form id="CadastroResponsavel" action="pastadestino.php" method="POST">
-            <h1 class="h1P">CADASTRO RESPONSÁVEL</h1>
+
+        <p class="p">O WebSchool dá as boas-vindas .</p>
+
+        <p class="p"> Nós da Equipe WebSchool trabalhamos para oferecer maior praticidade na hora das refeições, visando
+          garantir a segurança alimentar e nutricional de todos. </p>
+      </div>
+      <!---------------CADASTRO USUARIO---------->
+      <div id="cadastroUsuario" class="consumoESC col">
+        <ul class="nav nav-tabs">
+          <li class=" btn-primary btn" onclick="casdastroR()">Responsavel </li>
+          <!-- <li class=" btn-primary btn" onclick="casdastroA()"> Aluno </li> -->
+          <li class=" btn-primary btn" onclick="Lresponsavel()"> Lista de Responsavel Cadastrados </li>
+          <li class=" btn-primary btn" onclick="Laluno()">Lista de Alunos Cadastrados</li>
+        </ul>
+
+
+        <form id="CadastroResponsavel" action="pastadestino.php" method="POST">
+          <h1 class="h1P">CADASTRO RESPONSÁVEL</h1>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputName">Nome</label>
+              <input type="text" id="inputName" class="form-control" placeholder="Nome" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputSurname">CPF</label>
+              <input type="text" class="form-control cpf-mask" id="inputSurname" size=11 maxlength=11
+                placeholder="Ex.: 000.000.000-00" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Telefone</label>
+              <input type="number" class="form-control" id="inputEmail4" placeholder="Telefone" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">E-mail</label>
+              <input type="email" class="form-control" id="inputPassword4" placeholder="exemplo@email.com" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Login</label>
+              <input type="text" class="form-control" id="inputEmail4" placeholder="Login" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Senha</label>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Senha" required>
+            </div>
+
+          </div>
+          <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+
+        <!---------------************************************---------->
+        <div id="listaResponsavel">
+          <h1 class="h1P">LISTA RESPONSÁVEL</h1>
+          <div class="form-group input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+            <input name="consulta" id="txt_consulta" placeholder="Selecionar Responsavel" type="text"
+              class="form-control">
+          </div>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Login</th>
+                <th>Alterar</th>
+                <th>Excluir</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Joao Miguel</td>
+                <td>joao123</td>
+                <td><input type="button" name="optradio" value="Alterar"></td>
+                <td><input type="button" name="optradio" value="Excluir"></td>
+
+              </tr>
+              <tr>
+                <td>Julia Maria</td>
+                <td>julia89</td>
+                <td><input type="button" name="optradio" value="Alterar"></td>
+                <td><input type="button" name="optradio" value="Excluir"></td>
+              </tr>
+              <tr>
+                <td>Luciano Batista</td>
+                <td>luciano672</td>
+                <td><input type="button" name="optradio" value="Alterar"></td>
+                <td><input type="button" name="optradio" value="Excluir"></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+        <!---------------************************************---------->
+
+        <div id="listaAluno">
+          <h1 class="h1P">LISTA ALUNO</h1>
+          <div class="form-group input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+            <input name="consulta" id="txt_consulta" placeholder="Selecionar Responsavel" type="text"
+              class="form-control">
+          </div>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Login</th>
+                <th>Alterar</th>
+                <th>Bloquear</th>
+                <th>Desbloquear</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Aluno1</td>
+                <td>Aluno123</td>
+                <td><input type="button" name="optradio" value="Alterar"></td>
+                <td><input type="button" name="optradio" value="Bloquear"></td>
+                <td><input type="button" name="optradio" value="Desbloquear"></td>
+
+              </tr>
+              <tr>
+                <td>Aluno2</td>
+                <td>Aluno321</td>
+                <td><input type="button" name="optradio" value="Alterar"></td>
+                <td><input type="button" name="optradio" value="Bloquear"></td>
+                <td><input type="button" name="optradio" value="Desbloquear"></td>
+              </tr>
+              <tr>
+                <td>Aluno3</td>
+                <td>Aluno213</td>
+                <td><input type="button" name="optradio" value="Alterar"></td>
+                <td><input type="button" name="optradio" value="Bloquear"></td>
+                <td><input type="button" name="optradio" value="Desbloquear"></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+
+      </div>
+      <!---------------**CADASTRO DE PRODUTOS***---------->
+
+
+      <div id="cadastroProdutos" class="saldoESC col">
+
+
+        <div>
+          <ul class="nav nav-tabs">
+            <li class=" btn-primary btn" onclick="Cadastrocomida()">COMIDAS </li>
+            <li class=" btn-primary btn" onclick="casdastroBebidas()"> BEBIDAS</li>
+          </ul>
+
+
+          <form id="cadastroComida" action="pastadestino.php" method="POST">
+            <h1 class="h1P">CADASTRO COMIDA</h1>
             <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputName">Nome</label>
-                    <input type="text" id="inputName" class="form-control" placeholder="Nome" required>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="inputSurname">CPF</label>
-                    <input type="text" class="form-control" id="inputSurname" placeholder="CPF" required>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="inputEmail4">Telefone</label>
-                    <input type="number" class="form-control" id="inputEmail4" placeholder="Telefone" required>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="inputPassword4">E-mail</label>
-                    <input type="email" class="form-control" id="inputPassword4" placeholder="exemplo@email.com" required>
-                </div>  <div class="form-group col-md-6">
-                    <label for="inputEmail4">Login</label>
-                    <input type="text" class="form-control" id="inputEmail4" placeholder="Login" required>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="inputPassword4">Senha</label>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="Senha" required>
-                </div>
-              
+              <div class="form-group col-md-6">
+                <label for="inputName">Nome:</label>
+                <input type="text" id="inputName" class="form-control" placeholder="Nome Produto" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputSurname">Codigo:</label>
+                <input type="number" class="form-control" id="inputSurname" placeholder="Codigo" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Preço</label>
+                <input type="Number" class="form-control" id="inputEmail4" placeholder="PREÇO" required>
+              </div>
+
+              <div class="form-group">
+                Foto<input type="file" class="form-control-file" id="exampleFormControlFile1">
+              </div>
+
+              <label for="exampleFormControlTextarea1">Ingredientes</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+
+
+
+            </div>
+            <button type="submit" class="botaoCComida btn btn-primary">Cadastrar</button>
+          </form>
+          <!---------------***********************************---------->
+
+          <form id="cadastroBebidas" action="pastadestino.php" method="POST">
+            <h1 class="h1P">CADASTRO BEBIDAS</h1>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputName">Nome:</label>
+                <input type="text" id="inputName" class="form-control" placeholder="Nome Produto" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputSurname">Codigo:</label>
+                <input type="number" class="form-control" id="inputSurname" placeholder="Codigo" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Preço</label>
+                <input type="Number" class="form-control" id="inputEmail4" placeholder="PREÇO" required>
+              </div>
+
+              <div class="form-group">
+                Foto<input type="file" class="form-control-file" id="exampleFormControlFile1">
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="inputName">Fornecedor:</label>
+                <input type="text" id="inputName" class="form-control" placeholder="Fornecedor" required>
+              </div>
+
+
+
             </div>
             <button type="submit" class="btn btn-primary">Cadastrar</button>
-        </form>
-         <!---------------************************************---------->
-        <form id="CadastroAluno" action="pastadestino.php" method="POST">
-            <h1 class="h1P">CADASTRO ALUNO</h1>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputName">Nome</label>
-                    <input type="text" id="inputName" class="form-control" placeholder="Nome" required>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="inputSurname">CPF</label>
-                    <input type="text" class="form-control" id="inputSurname" placeholder="CPF" required>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="inputEmail4">Telefone</label>
-                    <input type="number" class="form-control" id="inputEmail4" placeholder="Telefone" required>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="inputPassword4">E-mail</label>
-                    <input type="email" class="form-control" id="inputPassword4" placeholder="exemplo@email.com" required>
-                </div>  <div class="form-group col-md-6">
-                    <label for="inputEmail4">Login</label>
-                    <input type="text" class="form-control" id="inputEmail4" placeholder="Login" required>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="inputPassword4">Senha</label>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="Senha" required>
-                </div>
-                <div class="form-group input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
-                    <input name="consulta" id="txt_consulta" placeholder="Selecionar Responsavel" type="text" class="form-control">
-                </div>
-        
-                <table id="tabela" class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th>Nome</th>
-                            <th>Login</th>
-                           <th> Selecione</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>Joao Miguel</th>
-                            <td>joao123</td>
-                            <td><label class="radio-inline"><input type="radio" name="optradio"></label></td>
-                           
-                        </tr>
-                    
-                        <tr>
-                            <th>Julia Maria</th>
-                            <td>julia89</td>
-                            <td><label class="radio-inline"><input type="radio" name="optradio"></label></td>
-                        </tr>
-        
-                        <tr>
-                            <th>Luciano Batista</th>
-                            <td>luciano672</td>
-                            <td><label class="radio-inline"><input type="radio" name="optradio"></label></td>
-                        </tr>
-        
-                                                     
-                    </tbody>
-                </table>
-       
-            </div>
-            
-           <button type="submit" class="btn btn-primary">Cadastrar</button>
-        <!-- " -->
-        </form>
-            <!---------------************************************---------->
-        <div id="listaResponsavel">
-            <h1 class="h1P">LISTA RESPONSÁVEL</h1>
-            <div class="form-group input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
-                <input name="consulta" id="txt_consulta" placeholder="Selecionar Responsavel" type="text" class="form-control">
-            </div>
-            <table class="table table-hover">
-              <thead>
-                <tr>
-                  <th>Nome</th>
-                  <th>Login</th>
-                  <th>Alterar</th>
-                  <th>Excluir</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Joao Miguel</td>
-                  <td>joao123</td>
-                  <td><input type="button" name="optradio" value="Alterar"></td>
-                    <td><input type="button" name="optradio" value="Excluir"></td>
-                
-                </tr>
-                <tr>
-                  <td>Julia Maria</td>
-                  <td>julia89</td>
-                  <td><input type="button" name="optradio" value="Alterar"></td>
-                    <td><input type="button" name="optradio" value="Excluir"></td>
-                </tr>
-                <tr>
-                  <td>Luciano Batista</td>
-                  <td>luciano672</td>
-                  <td><input type="button" name="optradio" value="Alterar"></td>
-                    <td><input type="button" name="optradio" value="Excluir"></td>
-                </tr>
-              </tbody>
-            </table>
-            
-            </div>
-         <!---------------************************************---------->
-    
-         <div id="listaAluno">
-            <h1 class="h1P">LISTA ALUNO</h1>
-            <div class="form-group input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
-                <input name="consulta" id="txt_consulta" placeholder="Selecionar Responsavel" type="text" class="form-control">
-            </div>
-            <table class="table table-hover">
-              <thead>
-                <tr>
-                  <th>Nome</th>
-                  <th>Login</th>
-                  <th>Alterar</th>
-                  <th>Bloquear</th>
-                  <th>Desbloquear</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                    <td>Aluno1</td>
-                    <td>Aluno123</td>
-                    <td><input type="button" name="optradio" value="Alterar"></td>
-                    <td><input type="button" name="optradio" value="Bloquear"></td>
-                    <td><input type="button" name="optradio" value="Desbloquear"></td>
-                
-                </tr>
-                <tr>
-                    <td>Aluno2</td>
-                    <td>Aluno321</td>
-                    <td><input type="button" name="optradio" value="Alterar"></td>
-                    <td><input type="button" name="optradio" value="Bloquear"></td>
-                    <td><input type="button" name="optradio" value="Desbloquear"></td>
-                </tr>
-                <tr>
-                    <td>Aluno3</td>
-                    <td>Aluno213</td>
-                    <td><input type="button" name="optradio" value="Alterar"></td>
-                    <td><input type="button" name="optradio" value="Bloquear"></td>
-                    <td><input type="button" name="optradio" value="Desbloquear"></td>
-                </tr>
-              </tbody>
-            </table>
-            
-            </div>
-           
-            
-              
-          
-    
-          
+          </form>
+
+        </div>
+      </div>
+      <!---------------***********************************---------->
+      <div id="AlterarProduto" class="consumoESC col">
+        <table class="table table-hover">
+          <h1 class="h1P">ALTERAR</h1>
+          <div class="form-group input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+            <input name="consulta" id="txt_consulta" placeholder="Selecionar o Produto" type="text"
+              class="form-control">
+          </div>
+          <thead>
+            <tr>
+              <th>Foto:</th>
+              <th>Nome:</th>
+              <th>Codigo:</th>
+              <th>Ingredientes</th>
+              <th>Preço</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img class="imgingredientes" src="img/sanduiche.png" alt=""></td>
+              <td>Sanduiche</td>
+              <td>005</td>
+              <td>2 fatias de pão de forma integral
+                Cream cheese a gosto
+                1 fatia de queijo mussarela
+                1 fatia de presunto (de sua preferência)
+                1 folha média de alface
+                Fatias de tomate</td>
+              <td>R$7,50</td>
+            </tr>
+            <td> <input type="button" value="Alterar"> </td>
+            <td> <input type="button" value="Bloquear"> </td>
+            <td> <input type="button" value="Desbloquear"> </td>
+            <tr>
+              <td> <img class="imgingredientes" src="img/bolinho.png" alt=""> </td>
+              <td>Bolo</td>
+              <td>004</td>
+              <td>2 xícaras (chá) de açúcar
+                3 xícaras (chá) de farinha de trigo
+                4 colheres (sopa) de margarina
+                3 ovos
+                1 e 1/2 xícara (chá) de leite
+                1 colher (sopa) </td>
+              <td>R$5,50</td>
+            </tr>
+            <td> <input type="button" value="Alterar"> </td>
+            <td> <input type="button" value="Bloquear"> </td>
+            <td> <input type="button" value="Desbloquear"> </td>
+            <tr>
+              <td> <img class="imgingredientes" src="img/banana.png" alt=""> </td>
+              <td>Banana</td>
+              <td>001</td>
+              <td>FRUTA</td>
+              <td>R$2,99</td>
+            </tr>
+            <td> <input type="button" value="Alterar"> </td>
+            <td> <input type="button" value="Bloquear"> </td>
+            <td> <input type="button" value="Desbloquear"> </td>
+          </tbody>
+        </table>
+
+      </div>
+
+
+      <!---------------********Saldo Aluno****************---------->
+
+      <div id="saldoAluno" class="consumoESC col">
+        <table class="table table-hover">
+          <h1 class="h1P">SALDO ALUNO</h1>
+          <div class="form-group input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+            <input name="consulta" id="txt_consulta" placeholder="Selecionar o Aluno" type="text" class="form-control">
+          </div>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Matricula</th>
+                <th>Saldo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Aluno1</td>
+                <td>123</td>
+                <td>R$61.93</td>
+
+
+              </tr>
+              <tr>
+                <td>Aluno2</td>
+                <td>321</td>
+                <td>R$32.65</td>
+
+              </tr>
+              <tr>
+                <td>Aluno3</td>
+                <td>213</td>
+                <td>R$50.50</td>
+
+              </tr>
+            </tbody>
+          </table>
+
+
+
+      </div>
+  </div>
+  </main>
+  </div>
+  <footer class="page-footer font-small blue">
+
+
+    <div style="color: black;" class="footer-copyright text-center py-3">
+      © 2021 Copyright:<a style="color: black;" href="#"> SoftwareNews</a>
     </div>
-          <!---------------**CADASTRO DE PRODUTOS***---------->
-        
-        
-          <div id="cadastroProdutos" class="saldoESC col">
-        
 
-            <div  >
-            <ul class="nav nav-tabs">
-                <li class=" btn-primary btn" onclick="Cadastrocomida()">COMIDAS </li>
-                <li class=" btn-primary btn" onclick="casdastroBebidas()"> BEBIDAS</li>
-            </ul> 
-             
 
-            <form id="cadastroComida" action="pastadestino.php" method="POST">
-                <h1 class="h1P">CADASTRO COMIDA</h1>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputName">Nome:</label>
-                        <input type="text" id="inputName" class="form-control" placeholder="Nome Produto" required>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputSurname">Codigo:</label>
-                        <input type="number" class="form-control" id="inputSurname" placeholder="Codigo" required>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputEmail4">Preço</label>
-                        <input type="Number" class="form-control" id="inputEmail4" placeholder="PREÇO" required>
-                    </div>
-                   
-                    <div class="form-group">
-                        Foto<input type="file" class="form-control-file" id="exampleFormControlFile1">
-                      </div>
-                      
-                        <label for="exampleFormControlTextarea1">Ingredientes</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-                      
-                    
-                  
-                </div>
-                <button type="submit" class="botaoCComida btn btn-primary">Cadastrar</button>
-            </form>
-            <!---------------***********************************---------->
-
-            <form id="cadastroBebidas" action="pastadestino.php" method="POST">
-                <h1 class="h1P">CADASTRO BEBIDAS</h1>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputName">Nome:</label>
-                        <input type="text" id="inputName" class="form-control" placeholder="Nome Produto" required>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputSurname">Codigo:</label>
-                        <input type="number" class="form-control" id="inputSurname" placeholder="Codigo" required>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputEmail4">Preço</label>
-                        <input type="Number" class="form-control" id="inputEmail4" placeholder="PREÇO" required>
-                    </div>
-                   
-                    <div class="form-group">
-                        Foto<input type="file" class="form-control-file" id="exampleFormControlFile1">
-                      </div>
-                      
-                      <div class="form-group col-md-6">
-                        <label for="inputName">Fornecedor:</label>
-                        <input type="text" id="inputName" class="form-control" placeholder="Fornecedor" required>
-                    </div>
-                      
-                    
-                  
-                </div>
-                <button type="submit" class="btn btn-primary">Cadastrar</button>
-            </form>
-
-</div>
-</div>
-<!---------------***********************************---------->
-            <div id="AlterarProduto"  class="consumoESC col">
-             <table  class="table table-hover">
-              <h1 class="h1P">ALTERAR</h1>
-              <div class="form-group input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
-                <input name="consulta" id="txt_consulta" placeholder="Selecionar o Produto" type="text" class="form-control">
-            </div>
-                <thead>
-                  <tr>
-                      <th>Foto:</th>
-                    <th>Nome:</th>
-                    <th>Codigo:</th>
-                    <th>Ingredientes</th>
-                    <th>Preço</th> 
-                    
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                      <td><img class="imgingredientes" src="img/sanduiche.png" alt=""></td>
-                      <td>Sanduiche</td>
-                      <td>005</td>
-                      <td>2 fatias de pão de forma integral
-                        Cream cheese a gosto
-                        1 fatia de queijo mussarela
-                        1 fatia de presunto (de sua preferência)
-                        1 folha média de alface
-                        Fatias de tomate</td>
-                      <td>R$7,50</td>
-                  </tr>
-                    <td  > <input type="button" value="Alterar"> </td> 
-                    <td > <input type="button" value="Bloquear"> </td> 
-                    <td > <input type="button" value="Desbloquear"> </td>
-                  <tr>
-                      <td> <img class="imgingredientes" src="img/bolinho.png" alt=""> </td>
-                      <td>Bolo</td>
-                      <td>004</td>
-                      <td>2 xícaras (chá) de açúcar
-                        3 xícaras (chá) de farinha de trigo
-                        4 colheres (sopa) de margarina
-                        3 ovos
-                        1 e 1/2 xícara (chá) de leite
-                        1 colher (sopa) </td>
-                      <td>R$5,50</td>
-                  </tr>
-                  <td  > <input type="button" value="Alterar"> </td> 
-                    <td > <input type="button" value="Bloquear"> </td> 
-                    <td > <input type="button" value="Desbloquear"> </td>
-                  <tr>
-                      <td> <img class="imgingredientes" src="img/banana.png" alt=""> </td>
-                      <td>Banana</td>
-                      <td>001</td>
-                      <td>FRUTA</td>
-                      <td>R$2,99</td>
-                  </tr>
-                  <td  > <input type="button" value="Alterar"> </td> 
-                    <td > <input type="button" value="Bloquear"> </td> 
-                    <td > <input type="button" value="Desbloquear"> </td>
-                </tbody>
-              </table>
-
-        </div>
-          
-     
-       <!---------------********Saldo Aluno****************---------->
-       
-       <div id="saldoAluno"  class="consumoESC col">
-        <table  class="table table-hover">
-         <h1 class="h1P">SALDO ALUNO</h1>
-         <div class="form-group input-group">
-           <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
-           <input name="consulta" id="txt_consulta" placeholder="Selecionar o Aluno" type="text" class="form-control">
-       </div>
-       <table class="table table-hover">
-        <thead>
-          <tr>
-            <th>Nome</th>
-            <th>Matricula</th>
-            <th>Saldo</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Aluno1</td>
-            <td>123</td>
-            <td>R$61.93</td>
-              
-          
-          </tr>
-          <tr>
-            <td>Aluno2</td>
-            <td>321</td>
-            <td>R$32.65</td>
-              
-          </tr>
-          <tr>
-            <td>Aluno3</td>
-            <td>213</td>
-            <td>R$50.50</td>
-              
-          </tr>
-        </tbody>
-      </table>
+  </footer>
+  <footer></footer>
 
 
 
- </div>
-</div>
-      </main> </div>
-      <footer class="page-footer font-small blue">
-      
-        
-        <div style="color: black;" class="footer-copyright text-center py-3">
-         © 2021 Copyright:<a style="color: black;" href="#">  SoftwareNews</a>
-        </div>
-       
-      
-      </footer><footer></footer> 
-      
-   
-      
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      <script src="JAVASCRIPT/cantina.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="JAVASCRIPT/cantina.js"></script>
 </body>
+
 </html>

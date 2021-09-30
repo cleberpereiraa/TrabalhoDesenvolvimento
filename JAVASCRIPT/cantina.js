@@ -1,56 +1,41 @@
- 
+
 /**********CADASTROSSSS usuario */
-function casdastroR(){
+function casdastroR() {
 
-let pais= document.getElementById("CadastroResponsavel");
-let  aluno = document.getElementById("CadastroAluno");
-let listaR = document.getElementById("listaResponsavel")
-let ListAluno = document.getElementById("listaAluno")
+    let pais = document.getElementById("CadastroResponsavel");
 
-ListAluno.style.display = "none"
-listaR.style.display= "none"
-aluno.style.display = "none"
-pais.style.display = "block"
+    let listaR = document.getElementById("listaResponsavel")
+    let ListAluno = document.getElementById("listaAluno")
+
+    ListAluno.style.display = "none"
+    listaR.style.display = "none"
+
+    pais.style.display = "block"
 
 }
-function casdastroA(){
 
+function Lresponsavel() {
     let cantina = document.getElementById("CadastroResponsavel");
-    let  aluno = document.getElementById("CadastroAluno");
+
     let listaR = document.getElementById("listaResponsavel")
     let ListAluno = document.getElementById("listaAluno")
     ListAluno.style.display = "none"
-    listaR.style.display= "none"
-    aluno.style.display = "block"
-    cantina.style.display = "none"
-    
-    }
+    listaR.style.display = "block"
 
- function Lresponsavel(){
-    let cantina = document.getElementById("CadastroResponsavel");
-    let  aluno = document.getElementById("CadastroAluno");
-    let listaR = document.getElementById("listaResponsavel")
-    let ListAluno = document.getElementById("listaAluno")
-    ListAluno.style.display = "none"
-    listaR.style.display= "block"
-    aluno.style.display = "none"
     cantina.style.display = "none"
 
 
- }    
- function Laluno(){
-    let cantina = document.getElementById("CadastroResponsavel");
-    let  aluno = document.getElementById("CadastroAluno");
-    let listaR = document.getElementById("listaResponsavel")
-    let ListAluno = document.getElementById("listaAluno")
-    ListAluno.style.display = "block"
-    listaR.style.display= "none"
-    aluno.style.display = "none"
-    cantina.style.display = "none"
+}
+
+function cadastroUsuario() {
+
+    document.getElementById("inic").style.backgroundColor = "#007bff"
+    document.getElementById("cdu").style.backgroundColor = "#343a40"
+    document.getElementById("cdp").style.backgroundColor = "#007bff"
+    document.getElementById("ap").style.backgroundColor = "#007bff"
+    document.getElementById("sa").style.backgroundColor = "#007bff"
 
 
- }  
- function cadastroUsuario(){
     var principal = document.getElementById("pPrincipal")
     let alterar = document.getElementById("AlterarProduto")
     var cadastroUsuario = document.getElementById("cadastroUsuario")
@@ -62,13 +47,13 @@ function casdastroA(){
     alterar.style.display = "none"
     principal.style.display = "none";
 
-}   
-/**********************************************/
+}
+
 /**********************cadastro produto************ */
 
 
-function Cadastrocomida(){
-   
+function Cadastrocomida() {
+
     let Ccomida = document.getElementById("cadastroComida")
     let bebidas = document.getElementById("cadastroBebidas")
     bebidas.style.display = "none"
@@ -76,8 +61,8 @@ function Cadastrocomida(){
 
 }
 
-function casdastroBebidas(){
-    
+function casdastroBebidas() {
+
     let Ccomida = document.getElementById("cadastroComida")
     let bebidas = document.getElementById("cadastroBebidas")
     bebidas.style.display = "block"
@@ -86,41 +71,15 @@ function casdastroBebidas(){
 
 }
 /********************************* */
-function inicio(){
-    
-   
-    var principal = document.getElementById("pPrincipal")
-    let alterar = document.getElementById("AlterarProduto")
-    var cadastroUsuario = document.getElementById("cadastroUsuario")
-    let cadastroProduto = document.getElementById("cadastroProdutos")
-    var saldoAluno = document.getElementById("saldoAluno");
-   saldoAluno.style.display = "none"
-    cadastroProduto.style.display = "none"
-    cadastroUsuario.style.display = "none"
-    alterar.style.display = "none"
-    principal.style.display = "block";
-   
-     
-} /* var extrato = document.getElementById("extrato")
-    
+function inicio() {
 
-    
-    extrato.style.display = "none"; */
-function cadastroProduto(){
-    var principal = document.getElementById("pPrincipal")
-   let alterar = document.getElementById("AlterarProduto")
-   let cadastroProduto = document.getElementById("cadastroProdutos")
-   var cadastroUsuario = document.getElementById("cadastroUsuario")
-   var saldoAluno = document.getElementById("saldoAluno");
-   saldoAluno.style.display = "none"
-   cadastroUsuario.style.display = "none"
-    cadastroProduto.style.display = "block"
-    alterar.style.display = "none"
-    principal.style.display = "none";
-    
-   
-}       
-function AlterarProduto(){
+    document.getElementById("inic").style.backgroundColor = "#343a40"
+    document.getElementById("cdu").style.backgroundColor = "#007bff"
+    document.getElementById("cdp").style.backgroundColor = "#007bff"
+    document.getElementById("ap").style.backgroundColor = "#007bff"
+    document.getElementById("sa").style.backgroundColor = "#007bff"
+
+
     var principal = document.getElementById("pPrincipal")
     let alterar = document.getElementById("AlterarProduto")
     var cadastroUsuario = document.getElementById("cadastroUsuario")
@@ -129,66 +88,72 @@ function AlterarProduto(){
     saldoAluno.style.display = "none"
     cadastroProduto.style.display = "none"
     cadastroUsuario.style.display = "none"
- alterar.style.display = "block"
-principal.style.display = "none";
-    
+    alterar.style.display = "none"
+    principal.style.display = "block";
 
 
-} 
+}
+function cadastroProduto() {
+    document.getElementById("inic").style.backgroundColor = "#007bff"
+    document.getElementById("cdu").style.backgroundColor = "#007bff"
+    document.getElementById("cdp").style.backgroundColor = "#343a40"
+    document.getElementById("ap").style.backgroundColor = "#007bff"
+    document.getElementById("sa").style.backgroundColor = "#007bff"
 
-function SaldoAluno(){
+    var principal = document.getElementById("pPrincipal")
+    let alterar = document.getElementById("AlterarProduto")
+    let cadastroProduto = document.getElementById("cadastroProdutos")
+    var cadastroUsuario = document.getElementById("cadastroUsuario")
+    var saldoAluno = document.getElementById("saldoAluno");
+    saldoAluno.style.display = "none"
+    cadastroUsuario.style.display = "none"
+    cadastroProduto.style.display = "block"
+    alterar.style.display = "none"
+    principal.style.display = "none";
+
+
+}
+function AlterarProduto() {
+    document.getElementById("inic").style.backgroundColor = "#007bff"
+    document.getElementById("cdu").style.backgroundColor = "#007bff"
+    document.getElementById("cdp").style.backgroundColor = "#007bff"
+    document.getElementById("ap").style.backgroundColor = "#343a40"
+    document.getElementById("sa").style.backgroundColor = "#007bff"
+
+    var principal = document.getElementById("pPrincipal")
+    let alterar = document.getElementById("AlterarProduto")
+    var cadastroUsuario = document.getElementById("cadastroUsuario")
+    let cadastroProduto = document.getElementById("cadastroProdutos")
+    var saldoAluno = document.getElementById("saldoAluno");
+    saldoAluno.style.display = "none"
+    cadastroProduto.style.display = "none"
+    cadastroUsuario.style.display = "none"
+    alterar.style.display = "block"
+    principal.style.display = "none";
+
+}
+
+function SaldoAluno() {
+
+    document.getElementById("inic").style.backgroundColor = "#007bff"
+    document.getElementById("cdu").style.backgroundColor = "#007bff"
+    document.getElementById("cdp").style.backgroundColor = "#007bff"
+    document.getElementById("ap").style.backgroundColor = "#007bff"
+    document.getElementById("sa").style.backgroundColor = "#343a40"
+
     var principal = document.getElementById("pPrincipal");
-   var saldoAluno = document.getElementById("saldoAluno");
-   let alterar = document.getElementById("AlterarProduto")
+    var saldoAluno = document.getElementById("saldoAluno");
+    let alterar = document.getElementById("AlterarProduto")
     var cadastroUsuario = document.getElementById("cadastroUsuario")
     let cadastroProduto = document.getElementById("cadastroProdutos")
 
-    
+
     cadastroProduto.style.display = "none"
     cadastroUsuario.style.display = "none"
     alterar.style.display = "none"
     principal.style.display = "none";
-   saldoAluno.style.display = "block"
+    saldoAluno.style.display = "block"
     principal.style.display = "none";
- 
-
-}
-/* 
-
-
-
-function depositar(){
-
-    
-    var produtos = document.getElementById("Produtos");
-    var principal = document.getElementById("pPrincipal");
-    var consumo = document.getElementById("consumo");
-    var saldo = document.getElementById("saldo");
-    let depositar =  document.getElementById("depositar")
-    var extrato = document.getElementById("extrato")
-    extrato.style.display = "none";
-   depositar.style.display = "block";
-    produtos.style.display = "none";
-    principal.style.display = "none";
-    consumo.style.display = "none";
-    saldo.style.display = "none";
 
 
 }
-
-function extrato(){
-    
-    var produtos = document.getElementById("Produtos");
-    var principal = document.getElementById("pPrincipal");
-    var consumo = document.getElementById("consumo");
-    var saldo = document.getElementById("saldo");
-    let depositar =  document.getElementById("depositar")
-    var extrato = document.getElementById("extrato")
-    extrato.style.display = "block";
-   depositar.style.display = "none";
-    produtos.style.display = "none";
-    principal.style.display = "none";
-    consumo.style.display = "none";
-    saldo.style.display = "none";
-
-}  */

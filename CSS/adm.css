@@ -171,6 +171,24 @@ label{
 .botaoCComida{
     margin-top: 10px;
 }
+
+/***cores botoes***/
+
+#inic{
+    background-color: #343a40;
+}
+#cdu{
+    background-color: #007bff;
+}
+#cdp{
+    background-color: #007bff;
+}
+#ap{
+    background-color: #007bff;
+}
+#sa{
+    background-color: #007bff;
+}
 @media screen and (max-width: 574px){
 
     .col-md-3{

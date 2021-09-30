@@ -171,6 +171,35 @@ th, td{
 #extrato{
     display: none;
 }
+
+
+/****cadastro aluno******/
+#CadastroAluno{
+    display: none;
+}
+
+/*******cores botoes*******/
+#ini{
+    background-color: #343a40;
+}
+#cc{
+    background-color: #007bff;
+}
+#sl{
+    background-color: #007bff;
+}
+#dp{
+    background-color: #007bff;
+}
+#ext{
+    background-color: #007bff;
+}
+#cp{
+    background-color: #007bff;
+}
+#ca{
+    background-color: #007bff;
+}
 @media screen and (max-width: 574px){
 
     .col-md-3{

@@ -59,6 +59,16 @@ li{
     margin-right: 20px;
     list-style: none;
 }
+/**********cores botoes***************/
+#ini{
+    background-color:#343a40 ;
+}
+#con{
+    background-color: #007bff;
+}
+#car{
+    background-color: #007bff;
+}
 /***************************/
 main{
     
@@ -130,7 +140,7 @@ input::placeholder{
  
 }
 #compra{
-    display: none;
+    /* display: none; */
     color: white;
     
 }
